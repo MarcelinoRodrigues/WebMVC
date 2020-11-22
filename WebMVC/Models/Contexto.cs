@@ -9,6 +9,7 @@ namespace WebMVC.Models
     public class Contexto : DbContext
     {
         public DbSet<Pessoa> Pessoas { get; set; }
+        public DbSet<Produto> Produtos { get; set; }
 
         public Contexto(DbContextOptions<Contexto> opcoes) : base(opcoes)
         {
