@@ -10,7 +10,11 @@ namespace WebMVC.Models
     {
         [Key]
         public int ID { get; set; }
+
+        [RegularExpression(@"^[aA-zZ]+((\s[aA-zZ]+)+)?$"), StringLength(30, MinimumLength = 5), Required]
         public string Nome { get; set; }
+
+        [RegularExpression(@"^[0-9]+?(.|,[0-9]+)$"), StringLength(6), Required]
         public char Quantidade { get; set; }
     }
 }
