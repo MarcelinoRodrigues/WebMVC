@@ -7,9 +7,9 @@
 <h2>Index</h2>
 
 <p>
-    <a asp-action="CriarPessoa">Create Pessoa</a>
+    <button class="btn btn-success"><a asp-action="CriarPessoa">Criar Usuário</a></button>
 </p>
-<table class="table">
+<table class="table table-dark">
     <thead>
         <tr>
             <th>
@@ -49,8 +49,8 @@
                 @Html.DisplayFor(modelItem => item.Telefone)
             </td>
             <td>
-                <a asp-action="AtualizarPessoa" asp-route-id="@item.PessoaID">Edit</a> |
-                <a asp-action="ExcluirPessoa" asp-route-id="@item.PessoaID">Delete</a>
+                <button class="btn btn-info"><a asp-action="AtualizarPessoa" asp-route-id="@item.PessoaID">Editar</a></button>
+                <button class="btn btn-danger"><a asp-action="ExcluirPessoa" asp-route-id="@item.PessoaID">Excluir</a></button>
             </td>
         </tr>
 }

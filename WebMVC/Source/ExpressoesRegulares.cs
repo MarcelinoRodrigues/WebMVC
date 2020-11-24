@@ -7,5 +7,6 @@ namespace WebMVC.Source
 {
     public class ExpressoesRegulares
     {
+        string expressaoDeCpf = "(@´ ^[0 - 9] +? (.|,[0 - 9] +)$´)";
     }
 }

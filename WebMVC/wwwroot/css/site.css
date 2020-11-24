@@ -22,7 +22,13 @@ body {
 .carousel-inner .item img[src$=".svg"] {
     width: 100%;
 }
-
+a{
+    color: #ffffff!important;
+}
+.btn-danger a,.btn-info a{
+    color: #fff;
+    text-decoration:none;
+}
 /* QR code generator */
 #qrCode {
     margin: 15px;
