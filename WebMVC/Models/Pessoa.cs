@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace WebMVC.Models
 {
@@ -11,7 +7,6 @@ namespace WebMVC.Models
         [Key]
         public int PessoaID { get; set; }
 
-
         public string Nome { get; set; }
 
         public string Sobrenome { get; set; }
@@ -19,7 +14,6 @@ namespace WebMVC.Models
         public string CPF { get; set; }
 
         public int Idade { get; set; }
-
 
         public string Telefone { get; set; }
     }

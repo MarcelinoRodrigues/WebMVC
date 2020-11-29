@@ -15,6 +15,6 @@ namespace WebMVC.Models
         public string Nome { get; set; }
 
         [RegularExpression(@"^[0-9]+?(.|,[0-9]+)$"), StringLength(6), Required]
-        public char Quantidade { get; set; }
+        public int Quantidade { get; set; }
     }
 }
