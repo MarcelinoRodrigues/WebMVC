@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿/*
+ * Marcelino Criação e Implementação do arquivo
+ */
 
 namespace WebMVC.Negocio
 {

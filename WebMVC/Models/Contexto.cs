@@ -1,16 +1,17 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿/*
+ * Marcelino Criação e Implementação do arquivo
+ */
+using Microsoft.EntityFrameworkCore;
 
 namespace WebMVC.Models
 {
     public class Contexto : DbContext
     {
         public DbSet<Pessoa> Pessoas { get; set; }
+
         public DbSet<Produto> Produtos { get; set; }
 
+        /// <param name="opcoes"></param>
         public Contexto(DbContextOptions<Contexto> opcoes) : base(opcoes)
         {
 
