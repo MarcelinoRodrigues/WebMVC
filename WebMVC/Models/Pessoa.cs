@@ -1,12 +1,17 @@
-﻿/*
- * Marcelino Criação e Implementação do arquivo
- */
+﻿//*********************************************
+// Marcelino Criação e Implementação do arquivo
+//********************************************* 
 
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using WebMVC.Negocio;
 
 namespace WebMVC.Models
 {
+    /// <summary>
+    /// Pessoa
+    /// </summary>
+    [Table("Pessoas")]
     public class Pessoa
     {
         /// <summary>

@@ -1,6 +1,6 @@
-﻿/*
- * Marcelino Criação e Implementação do arquivo
- */
+﻿//*********************************************
+// Marcelino Criação e Implementação do arquivo
+//********************************************* 
 
 namespace WebMVC.Negocio
 {

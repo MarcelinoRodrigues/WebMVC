@@ -1,9 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿//*********************************************
+// Marcelino Criação e Implementação do arquivo
+//********************************************* 
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 using WebMVC.Models;
 
 namespace WebMVC.Controllers
