@@ -3,9 +3,15 @@
  */
 
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using WebMVC.Negocio;
 
 namespace WebMVC.Models
 {
+    /// <summary>
+    /// Produto
+    /// </summary>
+    [Table("Produtos")]
     public class Produto
     {
         /// <summary>
@@ -16,12 +22,12 @@ namespace WebMVC.Models
         /// <summary>
         /// Nome do produto
         /// </summary>
-        [RegularExpression(@"^[aA-zZ]+((\s[aA-zZ]+)+)?$"), StringLength(30, MinimumLength = 5), Required]
+        [RegularExpression(ExpressoesRegulares.nome), StringLength(30, MinimumLength = 5), Required]
         public string Nome { get; set; }
         /// <summary>
         /// Quantidade do produto
         /// </summary>
-        [RegularExpression(@"^[0-9]+?(.|,[0-9]+)$"), StringLength(6), Required]
+        [RegularExpression(ExpressoesRegulares.numeroReal), StringLength(6), Required]
         public int Quantidade { get; set; }
     }
 }
