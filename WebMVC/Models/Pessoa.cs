@@ -27,6 +27,7 @@ namespace WebMVC.Models
         /// <summary>
         /// Sobrenome da Pessoa
         /// </summary>
+        [RegularExpression(ExpressoesRegulares.nome),StringLength(30,MinimumLength = 5)]
         public string Sobrenome { get; set; }
         /// <summary>
         /// CPF da Pessoa
@@ -37,13 +38,14 @@ namespace WebMVC.Models
         /// <summary>
         /// Idade da Pessoa
         /// </summary>
-        [RegularExpression(ExpressoesRegulares.numeroReal)]
+        [RegularExpression(ExpressoesRegulares.numeroReal),Required]
         public int Idade { get; set; }
 
         /// <summary>
         /// Telefone da Pessoa
         /// </summary>
         ///[RegularExpression(ExpressoesRegulares.telefone)]
+        [Required]
         public string Telefone { get; set; }
     }
 }
