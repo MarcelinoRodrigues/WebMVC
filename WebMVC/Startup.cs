@@ -54,7 +54,7 @@ namespace WebMVC
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Pessoas}/{action=Index}/{id?}");
+                    template: "{controller=Users}/{action=Index}/{id?}");
             });
         }
     }

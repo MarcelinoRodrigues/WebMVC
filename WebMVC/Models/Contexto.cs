@@ -14,6 +14,11 @@ namespace WebMVC.Models
         public DbSet<Pessoa> Pessoas { get; set; }
 
         /// <summary>
+        /// Conexão com a tabela Users
+        /// </summary>
+        public DbSet<User> Users { get; set; }
+
+        /// <summary>
         /// Construtor
         /// </summary>
         /// <param name="opcoes"></param>
