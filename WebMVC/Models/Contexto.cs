@@ -6,13 +6,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace WebMVC.Models
 {
+    /// <summary>
+    /// Classe de conexao
+    /// </summary>
     public class Contexto : DbContext
     {
-        /// <summary>
-        /// Conexão com a tabela Pessoa
-        /// </summary>
-        public DbSet<Pessoa> Pessoas { get; set; }
-
         /// <summary>
         /// Conexão com a tabela Users
         /// </summary>
