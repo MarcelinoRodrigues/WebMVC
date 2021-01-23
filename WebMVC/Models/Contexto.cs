@@ -3,6 +3,7 @@
 //********************************************* 
 
 using Microsoft.EntityFrameworkCore;
+using WebMVC.Models.ViewModels;
 
 namespace WebMVC.Models
 {
@@ -21,5 +22,6 @@ namespace WebMVC.Models
         /// </summary>
         /// <param name="opcoes"></param>
         public Contexto(DbContextOptions<Contexto> opcoes) : base(opcoes){}
+
     }
 }
