@@ -17,5 +17,20 @@ namespace WebMVC.Controllers
         {
             return View("Index");
         }
+
+        [HttpPost]
+        public IActionResult Login(AccountViewModel avm)
+        {
+            if(avm.Account.UserName.Equals("abc")&& avm.Account.Password.Equals("123"))
+            {
+                //Session["userName"] = avm.Account.UserName;
+                return View("Welcome");
+            }
+            else
+            {
+                ViewBag.Error = "Account's Invalid";
+                return View("Index");
+            }
+        }
     }
 }

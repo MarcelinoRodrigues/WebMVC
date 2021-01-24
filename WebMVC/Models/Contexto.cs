@@ -13,11 +13,6 @@ namespace WebMVC.Models
     public class Contexto : DbContext
     {
         /// <summary>
-        /// Conexão com a tabela Users
-        /// </summary>
-        public DbSet<User> Users { get; set; }
-
-        /// <summary>
         /// Construtor
         /// </summary>
         /// <param name="opcoes"></param>
